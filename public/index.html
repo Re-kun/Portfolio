@@ -11,9 +11,10 @@
 	</style>
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-	<header>
-		<nav class=" px-7 h-16 fixed w-[100%] bg-white lg:flex-row-reverse lg:flex items-center -top-0 lg:px-56">
+<body class="">
+
+	<header >
+		<nav class=" px-7 h-16 fixed w-[100%] bg-white flex-row lg:flex-row-reverse lg:flex items-center -top-0 lg:px-56 shadow-lg shadow-white">
 			<ul class="z-20 lg:invisible">
 	   		<input class="absolute w-10 h-10 opacity-0" type="checkbox" name="">
 				<li  class="w-10 h-1 bg-black mt-5"></li>
@@ -21,43 +22,42 @@
 				<li class="w-5 h-1 bg-black mt-2"></li>
 			</ul>
 
-			<ul class="
-			flex flex-col nav-items shadow-lg h-[100vh] w-[100%] absolute justify-start items-center text-3xl leading-[7rem] py-32 -top-[44rem] -left-0 bg-white
-			lg:static lg:flex-row lg:shadow-none lg:h-0 lg:py-0 lg:justify-end lg:text-lg lg:bg-transparent 
-			">
-				<li><a href="">Home</a></li>
-				<li class="ml-5"><a href="">About Me</a></li>
-				<li class="ml-5"><a href="">What I DO</a></li>
+			<ul class="flex flex-col nav-items shadow-lg h-[100vh] w-[100%] absolute justify-start items-center text-3xl leading-[7rem] py-[6.5rem] -left-[70rem] bg-white lg:static lg:flex-row lg:shadow-none lg:h-0 lg:py-0 lg:justify-end lg:text-lg lg:bg-transparent ">
+				<li><a href="#" onclick="smoothScroll('home')">Home</a></li>
+				<li class="ml-5" onclick="smoothScroll('about')"><a href="#">About Me</a></li>
+				<li class="ml-5" onclick="smoothScroll('do')"><a href="#">What I Do</a></li>
 			</ul>
-			<h1 class="text-4xl font-semibold invisible lg:visible">Re:kun</h1>
 
+			<h1 class="text-4xl font-semibold invisible lg:visible">Re:kun</h1>
 		</nav>
-		<section class="mt-20 lg:mt-[10.5rem]  px-7 py-20 sm:px-10 md:px-32 lg:px-56">
-				<h1 class="text-4xl font-semibold leading-relaxed lg:text-5xl  lg:leading-snug ">Hello, I'm Re. <br>I'm a Junior Fullstack Developer specializing in Web Development.</h1>
-				<div class="buttons mt-5">
-						<a class="px-5 py-3 border rounded-full border-slate-200 shadow-lg">Contact Me</a>
-						<a class="px-5 py-3 bg-black text-slate-200 rounded-full  shadow-lg">Github</a>
+
+		<section  class="mt-20 lg:mt-[10.5rem]  px-7 py-24 sm:px-10 md:px-32 lg:px-56">
+				<h1 class="text-4xl font-semibold leading-relaxed lg:text-5xl  lg:leading-snug selected:bg-black selected:text-slate-200">Hello, I'm Re. <br>I'm a Junior Fullstack Developer specializing in Web Development.</h1>
+				<div class="buttons mt-7">
+						<a href="#" class="px-5 py-3 border rounded-full border-slate-200 shadow-lg hover:bg-black hover:text-slate-200 hover:border-none" onclick="smoothScroll('follow')" target="blank">Follow Me</a>
+						<a href="https://github.com/Re-Kun" class="px-5 py-3 bg-black text-slate-200 rounded-full shadow-lg ml-3 hover:bg-white hover:text-black hover:border hover:border-slate-200">Github</a>
 				</div>
 		</section>
 	</header>
-	<main class="sm:px-10 md:px-32 lg:px-56">
-			<section>
-					<h1 class="text-2xl font-bold px-7 py-20  ">-ABOUT ME</h1>
-					<article class="container px-10 py-5">
-						<p class=" text-lg leading-relaxed text-slate-500">
-							Hello, Introducing my real name is Muhammad Raihan Alifiandra, and I use Re:Kun as my pen name, I am a 18 year old young man who is interested in the digital world, I started my IT world since 2021 until now. I was hesitant at first because I haven't found my passion for 15 years, but I was introduced to the world of programming by a friend, when I first got to know the world of programming I was confused about what part I was going to explore, when I first wrote code, I studied the field front end for seven months, so I moved to the back end. I learned backend for five months, and during these five months I committed to dive deep into the back end world.
+
+	<main class="sm:px-10 md:px-32 lg:px-56 px-7">
+			<section class="py-24" id="about">
+					<h1 class="text-2xl font-bold">- ABOUT ME</h1>
+					<article class="container   my-10">
+						<p class=" text-lg leading-relaxed text-slate-500 ">
+							Hello, Introducing my real name is Muhammad Raihan Alifiandra, and I use Re-Kun as my pen name, I am a 18 year old young man who is interested in the digital world, I started my IT world since 2021 until now. I was hesitant at first because I haven't found my passion for 15 years, but I was introduced to the world of programming by a youtube chanel, when I first got to know the world of programming I was confused about what part I was going to explore, when I first wrote code, I studied the field front end for seven months, so I moved to the back end. I learned backend for five months, and during these five months I committed to dive deep into the back end world.
 						</p>
 					</article>
 			</section>
 
-			<section class="lg:grid lg:grid-cols-2">
-					<h1 class="text-2xl font-bold px-7 pt-20 pb-10 ">-WHAT I DO</h1>
-
-					<article class="container px-10 pb-8 lg:w-64">
+			<section id="do">
+					<h1 class="text-2xl font-bold lg:px-7 pt-20 pb-10 ">-WHAT I DO</h1>
+				<div class="lg:grid lg:grid-cols-2">
+					<article class="container lg:px-10 pb-8">
 						<h1 class="text-xl">Database Management</h1>
 						<ul class="text-md text-slate-500">
 							<li class="mt-5">
-							- I can manage various SQL based databases, such as MYSQL and POSTGRESQL.
+							- I can manage SQL based databases, such as MYSQL.
 							</li>
 							<li class="mt-4">
 							-	Besides that, I am also used to designing databases for my application needs.
@@ -65,53 +65,56 @@
 						</ul>
 					</article>
 
-					<article class="container  px-10 pb-8 lg:w-64 ">
+					<article class="container  lg:px-10 pb-8 ">
 						<h1 class="text-xl">Programming language</h1>
 						<ul class="text-md text-slate-500">
 							<li class="mt-5">
-								- I understand several programming languages such as javascript, php, and golang, but I prefer to use Go-Lang as my main language.
+								- I understand several programming languages such as javascript, php, and python, but I prefer to use Javascript as my main language.
 							</li>
 							<li class="mt-4">
-								- because I chose a backend developer as my programming role so of course I'm used to making an application that is connected to a database.
+								- because I chose a fullstack developer as my programming role so of course I'm used to making an application that is connected to a database.
 							</li>
 							<li class="mt-4">
-								- even though I'm new to the world of backend developers but I'm quite confident in my abilities, I also often practice making a back end system from an application that I make
+								- even though I'm new to the world of fullstack developers but I'm quite confident in my abilities, I also often practice making a back end system from an application that I make
 							</li>
 						</ul>
 					</article>
 
-					<article class="container  px-10 pb-8 lg:w-64">
+					<article class="container  lg:px-10 pb-8 ">
 						<h1 class="text-xl">Frontend</h1>
 						<ul class="text-md text-slate-500">
 							<li class="mt-5">
-								- in addition to focusing on serverside, I also learned about the appearance of an application, I mastered HTML and CSS, TailwindCss at least enough to be called a website
+								- in addition to focusing on serverside, I also learned about the appearance of an application, I mastered HTML and CSS, at least enough to be called a website
 							</li>
 							<li class="mt-4">
-								- javascript as DOM and i used some framework like Vue.js and Node.Js
+								- javascript as DOM and i used some framework like Vue.js and Tailwind Css
 							</li>
 						</ul>
 					</article>
 
-					<article class="container  px-10 pb-8 lg:w-64">
+					<article class="container  lg:px-10 pb-8 ">
 						<h1 class="text-xl">Design</h1>
 						<ul class="text-md text-slate-500">
 							<li class="mt-5">
-								- Apart from coding, I sometimes also design, design banner posters or posts for my social media
+								- Apart from coding, I sometimes also design, design banner posters or ilustration for my social media
 							</li>
 						</ul>
 					</article>
+				</div>
 			</section>
 	</main>
-	<footer class="w-100% px-7 py-5 sm:px-10 md:px-32 lg:px-56">
-			<h1 class="text-4xl font-semibold">Re:Kun.</h1>
-			<ul class="my-10 text-center text-lg  leading-10 text-slate-500">
-				<li>Facebook</li>
-				<li>Instagram</li>
-				<li>Github</li>
-				<li>Linkedin</li>
+
+	<footer class="w-100% mt-20 px-7 py-5 sm:px-10 md:px-32 lg:px-56">
+			<h1 class="text-4xl font-semibold text-center" id="follow">Re:Kun.</h1>
+			<ul class=" my-0 mb-16 mt-3 text-center text-lg  leading-[4rem] text-slate-500">
+				<li><a href="https:facebook.com/schwartz" target="blank">Facebook</a></li>
+				<li><a href="https://instagram.com/re.kunn" target="blank">Instagram</a></li>
+				<li><a href="https://github.com/Re-Kun" target="blank">Github</a></li>
+				<li><a href="#" target="blank">Linkedin</a></li>
 			</ul>
-			<p class="text-center">Thank you verymuch and <br> Happy Coding :v</p>
+			<p class="text-center mt-24">Thank you verymuch and <br> Happy Coding :v</p>
 	</footer>
+
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
